@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    
+
+  <!-- CSS only -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>GV Studio.com</title>
+ <style>
+  
+  body{
+    background-color:black;
+  }
+  a {
+  background-color: gainsboro;
+  transition: background-color 0.5s;
+  border-radius: 17px;
+}
+a:hover {
+  background-color:darkorange;
+
+}
+   nav ul li{
+
+padding : 0 13px 0 13px;
+   }
+
+   h1 {
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+h1 span {
+  transition: 0.5s ease-out;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+h1:hover span:nth-child(1):after {
+  content: "";
+}
+h1:hover span:nth-child(2) {
+  margin-left: 10px;
+}
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange;
+}
+
+.gallery {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+
+
+@media (max-width: 350px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+#dhanu{
+  background-color:orange;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  
+}
+
+<!-- Grid column --
+body {
+  padding: 0;
+  margin: 0;
+  
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.gallerys {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+
+#sd {
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+#sd span {
+  transition: 0.5s ease-out;
+}
+#sd:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+#sd:hover span:nth-child(1):after {
+  content: "";
+}
+#sd:hover span:nth-child(2) {
+  margin-left: 10px;
+}
+#sd:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px purple, 0 0 40px purple, 0 0 40px purple;
+}
+
+.gallerysd {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border-top: 1px solid #ffffff;
+}
+
+.footer > * {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  flex:  1 100%;
+}
+
+.footer__addr {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color:white;
+}
+
+.footer__addr h2 {
+  font-family: 'Times New Roman', Times, serif, cursive;
+
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  font-style: normal;
+  color: orange;
+}
+
+.footer__btn {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #ffffff;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  line-height: 2em;
+}
+
+.footer a {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  text-decoration: none;
+}
+
+.footer__nav {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  color: #999;
+}
+
+.nav__ul--extra {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 24.375em) {
+  
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #ffffff
+        url("https://i.pinimg.com/originals/94/70/48/947048a87694397d1e380c24cd6b356b.gif") center
+        no-repeat;
+    z-index: 1;
+}
+
+ </style>
+</head>   
+<body>
+  <div class="loader-container"></div>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <s  class="navbar-brand" href="#"><img id="as" src="02.png" alt="Logo" width="250" height="100"   class="d-inline-block align-text-top"></s>
+      <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <h4>
+        <ul id="as" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="home.html" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photos.html" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html" href="#">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Model shoot.html" href="#"> Model shoots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Book Now.html" href="#">Book now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Web series & Short Flims.html" href="#">Web series & Short Flims</a>
+          </li>
+        </ul>
+      </h4>
+        </div>
+    </div>
+  </nav>
+
+  
+        <div class="row">
+
+          <center><h1> <span> PS-1 PHOTOSHOOT </h1></center>
+        
+          </div>
+
+    <!-- Grid row -->
+<div class="gallery" id="gallery">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="ps 1.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="ps2.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="ps 3.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+ 
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="ps5.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+</div>
+<div class="row">
+
+  <center><h1> <span> NAYANTHARA BRIDE LOOK </h1></center>
+
+  </div>
+  <!-- Grid row -->
+<div class="gallerys" id="gallerys">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="n1.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="n2.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="n3.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="n4.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="n5.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="n6.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+</div>
+
+<div class="row">
+
+  <center><h1 id="sd"> <span> INDOOR MODEL SHOOTS </h1></center>
+
+  </div>
+
+  <!-- Grid row -->
+<div class="gallerysd" id="gallerysd">
+
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="gwn (1).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="gwn (2).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="gwn (3).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="gwn (4).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+</div>
+
+<div class="row">
+
+  <center><h1> <span> TRADITIONAL MODEL SHOOTS </h1></center>
+
+  </div>
+  
+  <!-- Grid row -->
+<div class="gallery" id="gallery">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (1).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (2).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (3).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (4).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (5).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (6).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (7).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="tr (8).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+</div>
+
+<div class="row">
+
+  <center><h1> <span> WESTERN  MODEL SHOOTS </h1></center>
+
+  </div>
+
+  <!-- Grid row -->
+<div class="gallerys" id="gallerys">
+  
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="west (1).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+   <!-- Grid column -->
+   <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="west (2).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+   <!-- Grid column -->
+   <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="west (3).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+   <!-- Grid column -->
+   <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="west (4).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+   <!-- Grid column -->
+   <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="west (5).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+   <!-- Grid column -->
+   <div class="mb-3 pics animation all 2">
+    <img class="img-fluid"  src="west (6).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+</div>
+  
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 id="md" class="footer__logo"> <b>GV STUDIO WEDDING ART</b></h1>
+          
+      <h2><b>Contact- +91 63819-16044</b></h2>
+      
+      <address>
+        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=245&amp;height=82&amp;hl=en&amp;q=56B,Bharathi Street, Avinashi Main Road, Hopes Collage Coimbatore-641004&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:82px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:82px;}.gmap_iframe {height:82px!important;}</style></div>
+        56B,Bharathi Street, Avinashi Main Road, Hopes Collage<br>Coimbatore-641004<br>
+            
+        <a class="footer__btn" href="mailto:gvstudioweddingart@gmail.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title"><b>Photography </b></h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <p>Candid Wedding</p>
+          </li>
+  
+          <li>
+            <p >Pre Wedding</p>
+          </li>
+              
+          <li>
+            <p>Post Wedding</p>
+          </li>
+          <li>
+            <p>Engagement</p>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 id="md" class="nav__title"><b>Videography</b></h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <p>wedding Pre&Post</p>
+          </li>
+          
+          <li>
+            <p>Baby shower</p>
+          </li>
+          
+          <li>
+            <p>House Warming</p>
+          </li>
+          
+          
+          <li>
+            <p>Indoor & Out door shoots</p>
+          </li>
+          <li>
+            <p>Add shoots<p>
+          </li>
+          
+          <li>
+            <p>Model shoots<p>
+          </li>
+          
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; All rights reserved.</p>
+
+
+    </div>
+  </footer>
+
+
+
+  <script>
+    const loaderContainer = document.querySelector('.loader-container');
+    window.addEventListener('load', () => {
+      // ...
+  });
+  
+  window.addEventListener('load', () => {
+      loaderContainer.style.display = 'none';
+  });
+  </script>
+
+
+
+
+
+</body>

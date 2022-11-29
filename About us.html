@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    
+
+  <!-- CSS only -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>GV Studio.com</title>
+ <style>
+  
+  body{
+    background-color:gainsboro;
+  }
+  a {
+  background-color: gainsboro;
+  transition: background-color 0.5s;
+  border-radius: 17px;
+}
+a:hover {
+  background-color:darkorange;
+
+}
+   nav ul li{
+
+padding : 0 13px 0 13px;
+   }
+
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:black;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+
+}
+
+		a img{ 
+			width: 25%;
+		}
+
+  
+    .footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border-top: 1px solid #ffffff;
+}
+
+.footer > * {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  flex:  1 100%;
+}
+
+.footer__addr {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color:white;
+}
+
+.footer__addr h2 {
+  font-family: 'Times New Roman', Times, serif, cursive;
+
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  font-style: normal;
+  color: orange;
+}
+
+.footer__btn {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #ffffff;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  line-height: 2em;
+}
+
+.footer a {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  text-decoration: none;
+}
+
+.footer__nav {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  color: #999;
+}
+
+.nav__ul--extra {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  font-family: 'Times New Roman', Times, serif, cursive;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 24.375em) {
+  
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+#dhs{
+  background-color: orange;
+}
+#dha{
+  text-align: justify;
+}
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #ffffff
+        url("https://i.pinimg.com/originals/94/70/48/947048a87694397d1e380c24cd6b356b.gif") center
+        no-repeat;
+    z-index: 1;
+}
+
+	</style>
+
+   
+ </style>
+</head>   
+<body>
+  <div class="loader-container"></div>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <s  class="navbar-brand" href="#"><img id="as" src="02.png" alt="Logo" width="250" height="100"   class="d-inline-block align-text-top"></s>
+      <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <h4>
+        <ul id="as" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="home.html" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photos.html" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html" href="#">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Model shoot.html" href="#"> Model shoots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Book Now.html" href="#">Book now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Web series & Short Flims.html" href="#">Web series & Short Flims</a>
+          </li>
+          
+        </ul>
+      </h4>
+        </div>
+    </div>
+  </nav>
+  <div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3> CEO G PARTHIPAN  M.A.,M.Phil.,AAIP ANIMATION</h3>
+					<p id="dha">Is one of the best Wedding Photography Studio and Flim Maker’s,Editor’s and Desinger’s. Established in the year MARCH 2018, in Coimbatore - 04. That placed on   56B,Bharathi Street, Avinashi Rd, Hopes Collage, Coimbatore-04, also known for Wedding Photography,Videography,Ad Shoots,Model Shoot,Flim Making, Desingning Works, Video Editing Works,Graphic Desing, 3D Works,and Flim Works. And this company has clients all over Tamilnadu,Pondicheary, Bengaluru, Kerala, Andhara and Mumbai.</p>
+					
+				</div>
+							</div>
+			<div class="image-section">
+				<img src="04 (2).jpg">
+			</div>
+		</div>
+	</div>
+  <div id="dhs">
+
+  
+ <center><a  href="https://instagram.com/gvstudio_off?igshid=YmMyMTA2M2Y="><img src="pngwing.com.png" style="width: 80px;height:80px;"></a></center> 
+  
+</div>
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 id="md" class="footer__logo"> <b>GV STUDIO WEDDING ART</b></h1>
+          
+      <h2><b>Contact- +91 63819-16044</b></h2>
+      
+      <address>
+        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=245&amp;height=82&amp;hl=en&amp;q=56B,Bharathi Street, Avinashi Main Road, Hopes Collage Coimbatore-641004&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:82px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:82px;}.gmap_iframe {height:82px!important;}</style></div>
+        56B,Bharathi Street, Avinashi Main Road, Hopes Collage<br>Coimbatore-641004<br>
+            
+        <a class="footer__btn" href="mailto:gvstudioweddingart@gmail.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title"><b>Photography </b></h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <p>Candid Wedding</p>
+          </li>
+  
+          <li>
+            <p >Pre Wedding</p>
+          </li>
+              
+          <li>
+            <p>Post Wedding</p>
+          </li>
+          <li>
+            <p>Engagement</p>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 id="md" class="nav__title"><b>Videography</b></h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <p>wedding Pre&Post</p>
+          </li>
+          
+          <li>
+            <p>Baby shower</p>
+          </li>
+          
+          <li>
+            <p>House Warming</p>
+          </li>
+          
+          
+          <li>
+            <p>Indoor & Out door shoots</p>
+          </li>
+          <li>
+            <p>Add shoots<p>
+          </li>
+          
+          <li>
+            <p>Model shoots<p>
+          </li>
+          
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; All rights reserved.</p>
+    </div>
+  </footer> 
+  <script>
+    const loaderContainer = document.querySelector('.loader-container');
+    window.addEventListener('load', () => {
+      // ...
+  });
+  
+  window.addEventListener('load', () => {
+      loaderContainer.style.display = 'none';
+  });
+  </script>
+
+</body>
+
